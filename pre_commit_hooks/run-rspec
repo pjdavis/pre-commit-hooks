@@ -1,3 +1,5 @@
+require 'English'
+
 args = ARGV.join(' ')
 puts args if ENV['DEBUG']
 output = `rspec #{args} 2>&1`
