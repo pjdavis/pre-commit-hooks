@@ -1,6 +1,6 @@
 - id: rspec
   name: RSpec Runner
   description: Runs RSpec against your codebase
-  entry: pre_commit_hooks/rspec
+  entry: rspec
   language: ruby
   pass_filenames: false
