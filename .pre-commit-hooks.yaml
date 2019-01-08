@@ -1,6 +1,7 @@
 - id: rspec
   name: RSpec Runner
   description: Runs RSpec against your codebase
-  entry: rspec
+  entry: run-rspec
   language: ruby
+  type: [ruby]
   pass_filenames: false
