@@ -1,0 +1,6 @@
+args = ARGV.join(' ')
+puts args if ENV['DEBUG']
+output = `rspec #{args} 2>&1`
+status = $CHILD_STATUS.exitstatus
+puts output if status != 0
+exit status
