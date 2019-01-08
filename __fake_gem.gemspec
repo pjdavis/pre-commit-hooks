@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'rspec' # needed by reek
   s.bindir = 'pre_commit_hooks'
   s.executables = [
-    'rubocop',
+    'run-rspec',
   ]
 end
