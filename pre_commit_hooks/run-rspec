@@ -1,8 +1,12 @@
 require 'English'
+require 'fileutils'
 
 args = ARGV.join(' ')
 puts args if ENV['DEBUG']
-output = `bundle exec rspec #{args} 2>&1`
+puts FileUtils.pwd
+puts `pwd`
+
+output = `bundle install && bundle exec rspec #{args} 2>&1`
 status = $CHILD_STATUS.exitstatus
 puts output if status != 0
 exit status
