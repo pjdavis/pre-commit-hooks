@@ -3,5 +3,5 @@
   description: Runs RSpec against your codebase
   entry: run-rspec
   language: ruby
-  type: [ruby]
+  types: [ruby]
   pass_filenames: false
